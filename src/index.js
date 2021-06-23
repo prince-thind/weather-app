@@ -36,7 +36,6 @@ const weatherModule = (function () {
     const min = toCelsius(data.main.temp_min);
     const humidity = data.main.humidity;
     const feelsLike = toCelsius(data.main.feels_like);
-    console.log(data);
 
     cardContainer.innerHTML = `<div class="card">
     <div class="city-name">${city}</div>

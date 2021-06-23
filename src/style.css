@@ -22,13 +22,13 @@ body {
 .input-city {
   margin: 0.5rem;
 }
-.submit-button{
-    padding:0.5rem;
+.submit-button {
+  padding: 0.5rem;
 }
 
 .card-container {
-    min-width: 4rem;
-    min-height: 10rem;
+  min-width: 4rem;
+  min-height: 10rem;
   border: 2px solid black;
   width: max-content;
   margin: 4rem auto;
@@ -37,7 +37,7 @@ body {
 
 .card {
   border: 1px solid thistle;
-  
+
   font-size: 1.5rem;
 }
 
@@ -50,12 +50,10 @@ body {
   border-bottom: 2px solid black;
   padding: 0.2rem;
   background-color: rgb(3, 32, 32);
-
 }
 .present {
   padding: 1rem;
   background-color: rgb(16, 56, 56);
-
 }
 .min-max {
   display: flex;
