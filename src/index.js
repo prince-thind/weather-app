@@ -9,7 +9,7 @@ const weatherModule = (function () {
   function main() {
     const userCity = userInput.value.toLowerCase();
     const APIkey = 'f2efb62c94d05d02a245c576e66225ef';
-    const fetchURL = `http://api.openweathermap.org/data/2.5/weather?q=${userCity}&APPID=${APIkey}`;
+    const fetchURL = `https://api.openweathermap.org/data/2.5/weather?q=${userCity}&APPID=${APIkey}`;
 
     fetch(fetchURL, { mode: 'cors' })
       .then((response) => {
@@ -26,7 +26,7 @@ const weatherModule = (function () {
   function updateDisplay(data) {
     function toCelsius(K) {
       const k = 273.15;
-      return (K - 273.15).toFixed(1)+"C";
+      return (K - 273.15).toFixed(1) + 'C';
     }
 
     const city = data.name;
