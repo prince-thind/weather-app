@@ -1,18 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
 * {
   padding: 0;
   margin: 0;
 }
+
 body {
-  background: linear-gradient(to bottom, hsl(10, 60%, 10%), hsl(0, 60%, 0%));
+  background-color: rgb(34, 25, 18);
   background-repeat: no-repeat;
   text-align: center;
   min-height: 100vh;
   color: white;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Open Sans';
 }
 
 .heading {
-  padding: 1rem;
-  background-color: rgb(34, 25, 18);
+  padding: 0.5rem;
+
   border-bottom: 2px solid rgb(146, 54, 40);
 }
 .user-input {
@@ -21,60 +27,52 @@ body {
 }
 .input-city {
   margin: 0.5rem;
+  font-size: 1.2rem;
 }
 .submit-button {
   padding: 0.5rem;
 }
 
-.card-container {
-  min-width: 4rem;
-  min-height: 10rem;
-  border: 2px solid black;
-  width: max-content;
-  margin: 4rem auto;
-  background-color: rgb(17, 36, 10);
-}
-
-.card {
-  border: 1px solid thistle;
-
-  font-size: 1.5rem;
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid white;
+  background: radial-gradient(rgb(36, 36, 36), black);
+  font-size: 1.2rem;
 }
 
 .city-name {
   padding: 0.5rem;
+  color: hsla(60, 75%, 75%, 1);
+  text-align: left;
+  padding-left: 4rem;
   border-bottom: 2px solid black;
-  background-color: rgb(6, 61, 61);
+  font-size: 2rem;
 }
-.summary {
-  border-bottom: 2px solid black;
-  padding: 0.2rem;
-  background-color: rgb(3, 32, 32);
-}
-.present {
-  padding: 1rem;
-  background-color: rgb(16, 56, 56);
+.weather-info {
+  width: max-content;
+  margin: 1rem auto;
+  flex: 1;
+  border-radius: 1rem;
+  padding: 1rem 3rem;
+  background: radial-gradient(rgb(32, 68, 46), rgb(46, 47, 107));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 .min-max {
   display: flex;
-  justify-content: center;
-  gap: 0.5rem;
-  padding: 1rem;
-  border-bottom: 2px solid black;
-  background-color: rgb(16, 56, 56);
 }
-.min,
-.max {
-  border: 2px solid black;
-  padding: 0.2rem;
-  background-color: rgb(31, 56, 16);
+.min-max * {
+  margin: 1rem;
 }
-.humidity {
+.summary {
+  font-size: 2rem;
+}
+.copyright {
+  background-color: black;
+  color: white;
   padding: 0.5rem;
-  border-bottom: 2px solid black;
-  background-color: rgb(56, 25, 16);
-}
-.feels-like {
-  padding: 1rem;
-  background-color: rgb(56, 19, 16);
+  border: 1px solid gray;
 }

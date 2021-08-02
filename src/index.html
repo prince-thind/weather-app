@@ -1,30 +1,28 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <title>Weather App</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <header>
-      <h1 class="heading">Weather App</h1>
-      <div class="user-input">
-        <label for="input-city">Enter City Name:<input type="text" id="input-city" class="input-city" /></label>
-        <button class="submit-button" id="submit-button">Submit</button>
-      </div>
+        <h1 class="heading">Weather App</h1>
+        <form class="user-input" id="user-input">
+            <label for="input-city">Enter City Name:<input type="text" id="input-city" name="city" class="input-city"
+                    required /></label>
+            <button class="submit-button" id="submit-button">Submit</button>
+        </form>
     </header>
-    <main>
-      <div class="card-container" id="card-container">
-        <!-- <div class="card">
-          <div class="city-name">City Name</div>
-          <div class="summary">Summary</div>
-          <div class="present">Weather Now: 24C</div>
-          <div class="min-max">
-            <div class="min">Max:20C</div>
-            <div class="max">Min:30C</div>
-          </div>
-          <div class="humidity">Humidity:66%</div>
-          <div class="feels-like">Feels Like:30C</div>
-        </div> -->
-      </div>
+    <main class="main" id="main">
     </main>
-  </body>
+    <footer>
+        <div class="copyright">Copyright &copy; Prince Thind</div>
+    </footer>
+</body>
+
 </html>
