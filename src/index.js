@@ -1,6 +1,6 @@
 import './style.css';
 
-(function () {
+(() => {
   const form = document.querySelector('#user-input');
   const mainDiv = document.querySelector('#main');
   form.addEventListener('submit', main);
@@ -12,9 +12,7 @@ import './style.css';
     const fetchURL = `https://api.openweathermap.org/data/2.5/weather?q=${userCity}&APPID=${APIkey}`;
 
     fetch(fetchURL, { mode: 'cors' })
-      .then((response) => {
-        return response.json();
-      })
+      .then((response) => response.json())
       .then((data) => {
         updateDisplay(data);
       })
@@ -57,6 +55,6 @@ import './style.css';
 
   function toCelsius(K) {
     const kelvinConstant = 273.15;
-    return (K - kelvinConstant).toFixed(1) + '&deg;' + 'C';
+    return `${(K - kelvinConstant).toFixed(1)}&deg;C`;
   }
 })();
