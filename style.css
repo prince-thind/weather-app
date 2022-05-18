@@ -18,16 +18,18 @@ body {
 
 .heading {
   padding: 0.5rem;
-  border-bottom: 2px solid rgb(146, 54, 40);
 }
+
 .user-input {
   padding: 0.5rem;
   background-color: rgb(70, 57, 70);
 }
+
 .input-city {
   margin: 0.5rem;
   font-size: 1.2rem;
 }
+
 .submit-button {
   padding: 0.5rem;
 }
@@ -36,44 +38,49 @@ body {
   flex: 1;
   display: flex;
   flex-direction: column;
-  border: 1px solid white;
-  background: radial-gradient(rgb(36, 36, 36), black);
+  border-top: 1px solid gray;
+  background: linear-gradient(hsl(0, 0%, 5%), black);
   font-size: 1.2rem;
 }
 
 .city-name {
   padding: 0.5rem;
+  padding-bottom: 0;
   color: hsla(60, 75%, 75%, 1);
   text-align: left;
   padding-left: 4rem;
-  border-bottom: 2px solid black;
   font-size: 2rem;
 }
+
 .weather-info {
   width: max-content;
   margin: 1rem auto;
   flex: 1;
   border-radius: 1rem;
   padding: 1rem 3rem;
-  background: radial-gradient(rgb(32, 68, 46), rgb(46, 47, 107));
+  background: radial-gradient(hsl(239, 40%, 15%), hsl(239, 40%, 20%));
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
+
 .min-max {
   display: flex;
 }
+
 .min-max * {
   margin: 1rem;
 }
+
 .summary {
   font-size: 2rem;
 }
+
 .copyright {
   background-color: black;
   color: white;
   padding: 0.5rem;
-  border: 1px solid gray;
+  border-top: 1px solid gray;
 }
 
 @media only screen and (max-width: 760px) {
@@ -82,12 +89,15 @@ body {
     align-items: center;
     justify-content: center;
   }
+
   .weather-info {
     padding: 1rem 2rem;
   }
+
   .min-max {
     flex-direction: column;
   }
+
   .min-max * {
     margin: 0.2rem;
   }
